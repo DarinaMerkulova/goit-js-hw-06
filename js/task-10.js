@@ -13,15 +13,15 @@ btnDestroyEl.addEventListener(`click`, onDestroyBoxes);
 function onCreateBoxes() {
   let collectionBox = [];
 
-  let sitze = 30;
+  let size = 30;
 
   for (let i = 0; i < inputEl.value; i += 1) {
     const box = document.createElement('div');
-    box.style.width = `${sitze}px`;
-    box.style.height = `${sitze}px`;
+    box.style.width = `${size}px`;
+    box.style.height = `${size}px`;
     box.style.backgroundColor = getRandomHexColor();
 
-    sitze += 10;
+    size += 10;
 
     collectionBox.push(box);
   }
